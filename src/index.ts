@@ -4,6 +4,11 @@ import path from "node:path";
 import url from "node:url";
 import fs from "node:fs";
 
+import cliArgs from "command-line-args";
+const cliOptions = cliArgs([
+    { name: "count", alias: "c", type: Number, defaultOption: 1 }
+])
+
 
 const validCanvasDimensionsFt = [
     // The following sizes of flags are authorized for executive agencies: (EX.
@@ -139,7 +144,7 @@ async function createFlag(outputNum: number) {
 
 
 (async function(){
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < cliOptions.count; i++) {
         await createFlag(i);
     }
 })();

@@ -15,6 +15,7 @@
     "dependencies": {
         "@napi-rs/canvas": "^0.1.53",
         "canvas": "^2.11.2",
+        "command-line-args": "^6.0.0",
         "rimraf": "^6.0.1",
         "tsc": "^2.0.4",
         "typescript": "^5.5.3"
