@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
+    "type": "module",
     "scripts": {
         "start": "node ./dist/index.js",
         "test": "npm run build && npm start",
@@ -12,8 +13,12 @@
     "author": "ayvacs",
     "license": "GPL-3.0-only",
     "dependencies": {
+        "@napi-rs/canvas": "^0.1.53",
         "rimraf": "^6.0.1",
         "tsc": "^2.0.4",
         "typescript": "^5.5.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.11"
     }
 }
