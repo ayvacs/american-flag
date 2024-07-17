@@ -1,4 +1,4 @@
-![](res/example1.png) ![](res/example2.png) ![](res/example3.png)
+![](res/example2.png)
 
 # american-flag
 
@@ -16,3 +16,9 @@ npm run build
 node ./dist/index.js --count 5
 node ./dist/index.js -c 2
 ```
+
+## more examples
+
+![](res/example1.png)
+
+![](res/example3.png)
